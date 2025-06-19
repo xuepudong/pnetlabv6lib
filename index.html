@@ -245,9 +245,11 @@ sudo ./install_pnetlab_v6.sh</code></pre>
         <li><p><strong>权限问题：</strong> 确保您有足够的权限执行命令（例如使用了 <code>sudo</code>）。</p><p><strong>Permission Issues:</strong> Ensure you have sufficient permissions to execute commands (e.g., by using `sudo`).</p></li>
         <li><p><strong>解压错误：</strong> 检查解压过程是否成功，以及是否有足够的磁盘空间。</p><p><strong>Unzipping Errors:</strong> Check if the unzipping process was successful and if there's enough disk space.</p></li>
         <li><p><strong>APT 源错误：</strong> 如果与 APT 源相关的问题，请确保您正确添加了源，并且没有出现 `NO_PUBKEY` 等与GPG签名相关的错误（尽管本源没有GPG签名）。</p><p><strong>APT Source Errors:</strong> If the issue is related to the APT repository, ensure you've added the source correctly and there are no `NO_PUBKEY` or similar GPG signature-related errors (though this repository is unsigned).</p></li>
-    </ul>
-    <p>如果问题依然存在，请记录下您遇到的具体错误信息和截图，并联系 PNETLAB 社区或相关支持。</p>
-    <p>If the problem persists, please record the specific error messages and screenshots you encountered, and contact the PNETLAB community or relevant support.</p>
+		<li><p><strong>安装失败：</strong> 如果执行安装后仍提示安装错误，请执行修复命令。</p><p><strong>Installation failed:</strong> If an installation error is still displayed after the installation is completed, execute the repair command.</p></li>
+        <pre><button class="copy-btn" onclick="copyToClipboard(this)">复制 / Copy</button><code>sudo apt install --fix-broken</code></pre>
+	</ul>
+    <p>如果问题依然存在，请记录下您遇到的具体错误信息和截图，并联系官方TG并与Alex获取相关支持。</p>
+    <p>If the problem persists, please record the specific error message and screenshots you encountered, and contact the official Telegram and get relevant support from Alex.</p>
 
     <script>
         function copyToClipboard(button) {
