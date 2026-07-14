@@ -187,9 +187,9 @@ sudo unzip offline-pnetlab-v6.zip</code></pre>
     <h3>步骤 5: 下载并替换修复后的 Shell 文件<br>Step 5: Download and Replace the Repaired Shell File</h3>
     <p>我们提供了修复后的 <code>install_pnetlab_v6.sh</code> 文件，用于解决安装 php7.2 模块的问题。请下载并替换掉您离线包解压后的同名文件。</p>
     <p>We provide a repaired <code>install_pnetlab_v6.sh</code> file to fix issues with installing the php7.2 module. Please download and replace the identically named file after unzipping your offline package.</p>
-    <pre><button class="copy-btn" onclick="copyToClipboard(this)">复制 / Copy</button><code>cd /root/
-# 假设离线包解压后，install_pnetlab_v6.sh 文件位于 /root/ 目录下
-# Assuming after unzipping the offline package, install_pnetlab_v6.sh is in /root/
+    <pre><button class="copy-btn" onclick="copyToClipboard(this)">复制 / Copy</button><code>cd /root/offline-6/
+# 假设离线包解压后，install_pnetlab_v6.sh 文件位于 /root/offline-6/ 目录下
+# Assuming after unzipping the offline package, install_pnetlab_v6.sh is in /root/offline-6/
 sudo wget -O install_pnetlab_v6.sh https://raw.githubusercontent.com/xuepudong/pnetlabv6lib/refs/heads/master/install_pnetlab_v6.sh
 sudo chmod +x install_pnetlab_v6.sh</code></pre>
     <p><strong>注意：</strong> 如果您解压后的 <code>install_pnetlab_v6.sh</code> 文件不在 <code>/root/</code> 目录下，请先 <code>cd</code> 到该文件所在的目录再执行 <code>wget</code> 命令，或者调整 <code>wget -O</code> 的路径。</p>
